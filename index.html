@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <p class="tagline">A LITTLE MORE ORGANIZED</p>
+            <h1>My To-Do List<span>.</span></h1>
+            <p class="subtitle">One task at a time. You've got this.</p>
+        </header>
+
+        <section class="todo-box">
+            <form id="todo-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="What needs to get done?"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">Add task +</button>
+            </form>
+
+            <div class="list-heading">
+                <h2>Today's tasks</h2>
+                <span id="task-count">0 tasks left</span>
+            </div>
+
+            <ul id="task-list"></ul>
+
+            <p id="empty-message">Nothing here yet. Add your first task!</p>
+        </section>
+
+        <footer>
+            <p>Small steps still move you forward.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
